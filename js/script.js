@@ -32,6 +32,9 @@ heading.className = "subheading";
 
 /// 5.
 const paragraphs = document.querySelectorAll("p");
+for (let i = 0; i < paragraphs.length; i++) {
+  paragraphs[i].style.color = "red";
+}
 
 /// 6.
 const resultsContainer = document.querySelector(".results");
@@ -40,7 +43,7 @@ resultsContainer.style.backgroundColor = "yellow";
 
 /// 7.
 function listOfCats(list) {
-  for (i = 0; i < list.length; i++) {
+  for (let i = 0; i < list.length; i++) {
     console.log(list[i].name);
   }
 }
